@@ -4,13 +4,31 @@
 <head>
 
     <style>
+
+    
+
     table, th, td {
         border:1px solid black;
-        border-collapse: collapse;
+        /* border-collapse: collapse; */
+        padding: 5px;
     }
 
-    th, td {
+    table {
+        border-spacing: 3px;
+    }
+
+
+    /* th, td {
         padding: 15px;
+    } */
+
+    th {
+        text-align: left;
+        padding: 10px;
+        font-size: 20px;
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        font-style: italic;
+        color: blueviolet;
     }
     </style>
 
@@ -46,5 +64,48 @@
                     <td>55</td>
             </tr>
         </table>
+</body>
+
+
+
+<head>
+    <style>
+    
+    table, th, td {
+        border: 1px solid red;
+        border-collapse: collapse;
+    }
+
+    th, td {
+        padding:  5px;
+        text-align: center;
+    }
+        
+    </style>
+
+
+</head>
+
+
+<body>
+
+    <h2>cells that spans two columns</h2>
+    <p>use the colspan attribute</p>
+
+    <table style="width: 100%">
+    <tr>
+        <th>name</th>
+        <th colspan="2">telephone</th>
+    </tr>
+
+    <tr>
+        <td>Bill Gates</td>
+        <td>1223223232323</td>
+        <td>7676767676774</td>
+        
+    </tr>
+
+    </table>
+
 </body>
 </html>
