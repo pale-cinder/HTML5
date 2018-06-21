@@ -5,17 +5,32 @@
 
 <style>
 
+table {
+width:100%;
+}
+
 table, th, td {
     border: 1px solid black;
     border-collapse: collapse;
 }
 th, td {
     padding: 15px;
-    text-align: left;
+    text-align: right;
 }
 table#t01 {
     width: 100%;    
     background-color: palevioletred;
+}
+
+table#t01 tr:nth-child(even) {
+    background-color: floralwhite;
+}
+table#t01 tr:nth-child(odd) {
+   background-color: pink;
+}
+table#t01 th {
+    background-color: black;
+    color: white;
 }
 
 </style>
@@ -24,7 +39,7 @@ table#t01 {
 <body>
 
         <h2>Styling Tables</h2>
-        <table style="width:100%">
+        <table>
 
                 <tr>
                     <th>first name</th>
