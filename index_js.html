@@ -15,5 +15,16 @@ onclick="document.getElementById('demo').innerHTML = Date()">Click me to display
 <p id="example"></p>
 <script>document.getElementById("example").innerHTML="Hello JavaScript";</script>
 
+<p>JavaScript can change the content of an HTML element:</p>
+<button type="button" onclick="myFunction()">Click me!</button>
+
+<p id="demoex">This is example</p>
+
+<script>
+    function myFunction() {
+        document.getElementById("demoex").innerHTML = "Hello! Hello!";
+    }
+</script>
+
 </body>
 </html>
