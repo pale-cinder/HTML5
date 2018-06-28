@@ -15,7 +15,7 @@ onclick="document.getElementById('demo').innerHTML = Date()">Click me to display
 <p id="example"></p>
 <script>document.getElementById("example").innerHTML="Hello JavaScript";</script>
 
-<p>JavaScript can change the content of an HTML element:</p>
+<p>JavaScript can change the content of an HTML element and the style:</p>
 <button type="button" onclick="myFunction()">Click me!</button>
 
 <p id="demoex">This is example</p>
@@ -23,8 +23,38 @@ onclick="document.getElementById('demo').innerHTML = Date()">Click me to display
 <script>
     function myFunction() {
         document.getElementById("demoex").innerHTML = "Hello! Hello!";
+        document.getElementById("demoex").style.color = "red";
+        document.getElementById("demoex").style.backgroundColor = "yellow";
+
     }
 </script>
+
+<script>
+
+function light (sw) {
+    var pic;
+    if (sw == 0) {
+        pic = "picb.jpg"
+
+    }
+
+    else {
+        pic = "pic.jpg"
+
+    }
+    document.getElementById('picture').src = pic;
+}
+
+</script>
+
+<img id="picture" src="picb.jpg" width="255" height="255">
+
+<p>
+
+<button type="button" onclick="light(1)">light on</button>
+<button type="button" onclick="light(0)">light off</button>
+
+</p>
 
 </body>
 </html>
