@@ -17,7 +17,14 @@
                 h2 {color: palevioletred;}    
                 p {color: green;}
               </style>
-        <link rel="stylesheet" href="mystyle.css"
+        <link rel="stylesheet" href="mystyle.css">
+
+        <script>
+            function myFunction() {
+               document.getElementById("demo").innerHTML = "Hello";
+            }
+        </script>
+      
         </head>
 <body>
 
@@ -33,6 +40,10 @@
 
 <p>The content of the body element is displayed in the browser window.</p>
 <p>The content of the title element is displayed in the browser tab, in favorites and in search engine results.</p>
+
+<h2>Web Page</h2>
+<p id="demo">something is here</p>
+<button type="button" onclick="myFunction()">Try it;)</button>
 
 
 </body>
