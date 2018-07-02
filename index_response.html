@@ -9,7 +9,27 @@
        
         <h2>Responsive Image</h2>
         <p>When the CSS width property is set in a percentage value, the image will scale up and down when resizing the browser window.</p>
-        <img src="italy1.jpg" style=width:100%;>
+        <!-- <img src="italy3.jpg" style="width:100%;"> -->
+
+        <p>If the max-width property is set to 100%, the image will scale down if it has to, but never scale up to be larger than its original size.</p>
+        <!-- <img scr="italy3.jpg" alt="italy" style="(max-width: 100%);height : auto;"> -->
+
+        
+        <h2>Show Different Images Depending on Browser Width</h2>
+        <p>Resize the browser width and the image will change.</p>
+
+        <picture>
+            <source scrset="italy1.jpg" media="(max-width: 685px)">
+            <source scrset="table-1.jpg" media="(max-width: 1000px)">
+            <source scrset="italy3.jpg" media="(max-width: 1400px)">
+
+                <img scr="italy3.jpg" alt="italy" style="width:auto;">
+
+
+
+
+
+        </picture>
 
 
     </body>
