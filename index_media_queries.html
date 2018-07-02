@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+    <meta name="viewport" content="width=device-width, initital-scale=1.0">
+
+    <style>
+    
+    * {
+        box-sizing: border-box;
+    }
+
+    .left {
+        background-color: aqua;
+        padding: 30px;
+        float: left;
+        width: 30%;
+    }
+
+    .main {
+        background-color: antiquewhite;
+        padding: 30px;
+        float: left;
+        width: 30%;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+
+    }
+
+    .right {
+        background-color: brown;
+        padding: 30px;
+        float: left;
+        width: 30%;
+    }
+
+        /* Use the media query to add a break point at 800px*/
+        @media screen and (max-width: 800px){
+            .left, .main, .right {
+                width: 100%;
+                /* The width is 100% if the viewport is 800px or smaller */
+            }
+        }
+    
+    
+    
+    </style>
+
+
+
+</head>
+
+
+<body>
+    <h2>Media Queries</h2>
+    <p>Resize the browser window</p>
+
+    <p style="color: blue;">Make sure you reach the breakpoint at 800px when resizing the frame.</p>
+
+    <div class="left">
+        <p>left menu</p>
+
+    </div>
+
+    <div class="main">
+        <p>main content</p>
+        
+    </div>
+
+    <div class="right">
+        <p>right content</p>
+
+    </div>
+</body>
+
+</html>
+
+
+</html>
