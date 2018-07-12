@@ -10,7 +10,7 @@
     body, html {
         height:100%;
     }
-    .parallax {
+    .parallaxtop {
         /* Used image */
         background-image: url("p2.jpg");
 
@@ -28,13 +28,31 @@
         
     }
     
+    .parallaxbottom {
+        /* Used image */
+        background-image: url("p3.jpg");
+
+        /* Set specific height */
+        /* min-height: 500px; */
+
+        /* Full height */
+         height: 100%;
+
+        /* Create the parallax scrolling effect */
+        background-attachment: fixed;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-repeat: cover;
+        
+    }
+
     /* Turn off parallax scrolling for tablets and phones. Increase the pixels if needed */
     @media only screen and (max-device-width:1366px) {
         .parallax{
             background-attachment: scroll;
         }
     }
-    
+
     </style>
 
 </head>
@@ -43,7 +61,7 @@
 
     <p>Please, scroll Up and Down this page to see the parallax scrolling effect.</p>
 
-    <div class="parallax"></div>
+    <div class="parallaxtop"></div>
 
     <div style="height: 1000px; background-color: coral; font-size: 36px; font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif">
         Please, scroll Up and Down this page to see the parallax scrolling effect. This div is here just to enable scrolling .
@@ -51,7 +69,7 @@
         Try to remove the background attachment property to remove the scrolling effect. 
     </div>
     
-    <div class="parallax"></div>
+    <div class="parallaxbottom"></div>
 
 </body>
 </html>
