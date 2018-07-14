@@ -154,6 +154,34 @@
     </form>
     </fieldset>
 
+    <fieldset>
+    <h2><mark><ins>Number Field</ins></mark></h2>
+    <p>>The <strong>input type="number"</strong> defines a numeric input field:</p>
+    <p>You can use the min and max attributes to add numeric restrictions in the input field:</p>
+    <br>
+    <form action="/page.hph">
+    Quantity (from 1 to 10):
+    <input type="number" name="quantity" min="1" max="10">
+    <br>
+    <br>
+    <input type="submit" value="Submit">
+    <br>
+    </form>
+    </fieldset>
+
+    <fieldset>
+    <h2><mark><ins>Numeric Step</ins></mark></h2>
+    <p>Depending on browser support:<br>Fixed steps will apply in the input field.</p>
+    <br>
+    <form action="/page.hph">
+    Quantity (from 1 to 10):
+    <input type="number" name="quantity" min="0" max="100" value="25">
+    <br>
+    <br>
+    <input type="submit" value="Submit">
+    <br>
+    </form>
+    </fieldset>
 
 
 
