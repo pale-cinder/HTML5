@@ -10,11 +10,14 @@
     
     <h2 style="color: brown;"><mark><ins>Some Text Here...</ins></mark></h2>
     <fieldset>
-    <p style="color: chocolate; font: 50px; font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif"><i>The <strong>input type="text"</strong> defines a one like text output:</i></p>
+    <p style="color: chocolate; font: 50px; font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif"><i>The <strong>input type="text"</strong> defines a one like text output. (First name set as readonly).</i></p>
 
     <form action="/some_page.php">
     First name:<br>
-    <input type="text" name="firstname">
+
+    <!-- The readonly attribute specifies that the input field is read only (cannot be changed): -->
+
+    <input type="text" name="firstname" value="Jo" readonly>
     <br>
     <br>
     Last name:<br>
