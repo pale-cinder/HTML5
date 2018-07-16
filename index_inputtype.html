@@ -124,13 +124,57 @@
     <fieldset>
     <h2><mark><ins>Email Field</ins></mark></h2>
     <p>The <strong>input type="email"</strong> is used for input fields that should contain an e-mail address:</p>
+    
     <br>
     <form action="/page.hph">
     E-mail:
     <input type="email" name="email">
     <input type="submit" value="Next">
     <br>
+    <h2>The autocomplete Attribute also is here.</h2>
+    <br>
+    <form action="/action_page.php" autocomplete="on">
+        First name:<input type="text" name="fname"><br>
+        Last name: <input type="text" name="lname"><br>
+        E-mail: <input type="email" name="email" autocomplete="off"><br>
+        <input type="submit">
+      </form>
+      <br>
+      <br>
+
+      <h2>The novalidate Attribute</h2>
+      <p>The novalidate attribute specifies that the form data should not be validated when submitted.</p>
+      
+      <form action="/action_page.php" novalidate>
+      E-mail: <input type="email" name="user_email">
+      <input type="submit">
+      </form>
+      <br>
     </form>
+
+    <h2>The autofocus Attribute</h2>
+    <p>The autofocus attribute specifies that the input field should automatically get focus when the page loads.</p>
+
+    <form action="/action_page.php">
+    First name:<input type="text" name="fname" autofocus><br>
+    Last name: <input type="text" name="lname"><br>
+    <input type="submit">
+
+    <br>
+
+    <h2>The formaction Attribute</h2>
+    <p>The formaction attribute specifies the URL of a file that will process the input control when the form is submitted.</p>
+
+    <br>
+
+    First name: <input type="text" name="fname"><br>
+    Last name: <input type="text" name="lname"><br>
+    <input type="submit" value="Submit"><br>
+    <input type="submit" formaction="/action_page2.php" value="Submit to another page">
+
+
+    </form>
+
     </fieldset>
 
     <fieldset>
