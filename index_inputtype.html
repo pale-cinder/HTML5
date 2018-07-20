@@ -303,6 +303,19 @@
     </form>
     </fieldset>
 
+    <fieldset>
+    <h2>The formenctype Attribute</h2>
+    <p>The formenctype attribute specifies how the form data should be encoded when submitted (only for forms with method="post").</p>
+    <form action="/page.hph">
+    First name: <input type="text" name="fname"<br>
+    <input type="submit" value="Submit">
+    <input type="submit" formenctype="multipart/form-data" value="Submit a multipart / form data">
+    <br>
+    </form>
+    </fieldset>
+
+
+
 </body>
 </html>
 
